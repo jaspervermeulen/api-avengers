@@ -2,6 +2,7 @@
 export async function GET(request) {
   const avengers = [
     {
+      id: 1,
       name: 'Tony Stark',
       alias: 'Iron Man',
       powers: ['Genius intellect', 'Powered armor suit'],
@@ -13,6 +14,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 2,
       name: 'Steve Rogers',
       alias: 'Captain America',
       powers: ['Super soldier serum', 'Enhanced strength'],
@@ -23,6 +25,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 3,
       name: 'Thor Odinson',
       alias: 'Thor',
       powers: ['God of Thunder', 'Superhuman strength'],
@@ -33,6 +36,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 4,
       name: 'Bruce Banner',
       alias: 'Hulk',
       powers: ['Gamma radiation transformation'],
@@ -43,6 +47,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 5,
       name: 'Natasha Romanoff',
       alias: 'Black Widow',
       powers: ['Peak human condition'],
@@ -53,6 +58,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 6,
       name: 'Clint Barton',
       alias: 'Hawkeye',
       powers: ['Peak human accuracy'],
@@ -64,6 +70,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 7,
       name: 'Peter Parker',
       alias: 'Spider-Man',
       powers: ['Spider physiology'],
@@ -75,6 +82,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 8,
       name: "T'Challa",
       alias: 'Black Panther',
       powers: ['Heart-shaped herb enhancement'],
@@ -86,6 +94,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 9,
       name: 'Carol Danvers',
       alias: 'Captain Marvel',
       powers: ['Cosmic energy manipulation'],
@@ -96,6 +105,7 @@ export async function GET(request) {
       },
     },
     {
+      id: 10,
       name: 'Stephen Strange',
       alias: 'Doctor Strange',
       powers: ['Master of Mystic Arts'],
@@ -107,6 +117,7 @@ export async function GET(request) {
     },
     // Adding 20 more Avengers
     {
+      id: 11,
       name: 'Sam Wilson',
       alias: 'Falcon',
       powers: ['Flight suit'],
@@ -114,6 +125,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], allies: ['Steve Rogers'] },
     },
     {
+      id: 12,
       name: 'Wanda Maximoff',
       alias: 'Scarlet Witch',
       powers: ['Chaos magic'],
@@ -121,6 +133,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], family: ['Pietro Maximoff (brother)'] },
     },
     {
+      id: 13,
       name: 'Pietro Maximoff',
       alias: 'Quicksilver',
       powers: ['Super speed'],
@@ -128,6 +141,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], family: ['Wanda Maximoff (sister)'] },
     },
     {
+      id: 14,
       name: 'James Rhodes',
       alias: 'War Machine',
       powers: ['Powered armor suit'],
@@ -135,6 +149,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], allies: ['Tony Stark'] },
     },
     {
+      id: 15,
       name: 'Scott Lang',
       alias: 'Ant-Man',
       powers: ['Size manipulation'],
@@ -142,6 +157,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], family: ['Cassie Lang (daughter)'] },
     },
     {
+      id: 16,
       name: 'Hope van Dyne',
       alias: 'Wasp',
       powers: ['Size manipulation'],
@@ -149,6 +165,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], family: ['Hank Pym (father)'] },
     },
     {
+      id: 17,
       name: 'Vision',
       alias: 'Vision',
       powers: ['Mind Stone enhancement'],
@@ -156,6 +173,7 @@ export async function GET(request) {
       relations: { team: ['Avengers'], significantOther: 'Wanda Maximoff' },
     },
     {
+      id: 18,
       name: 'Nick Fury',
       alias: 'Nick Fury',
       powers: ['Peak human condition'],
@@ -163,6 +181,7 @@ export async function GET(request) {
       relations: { team: ['Avengers', 'S.H.I.E.L.D.'] },
     },
     {
+      id: 19,
       name: 'Bucky Barnes',
       alias: 'Winter Soldier',
       powers: ['Super soldier serum'],
@@ -170,87 +189,14 @@ export async function GET(request) {
       relations: { team: ['Avengers'], allies: ['Steve Rogers'] },
     },
     {
+      id: 20,
       name: 'Hank Pym',
       alias: 'Ant-Man (original)',
       powers: ['Size manipulation'],
       abilities: ['Pym Particles creator', 'Genius intellect'],
       relations: { team: ['Avengers'], family: ['Hope van Dyne (daughter)'] },
     },
-    {
-      name: 'Janet van Dyne',
-      alias: 'Wasp (original)',
-      powers: ['Size manipulation'],
-      abilities: ['Flight', 'Bio-energy blasts'],
-      relations: { team: ['Avengers'], family: ['Hope van Dyne (daughter)'] },
-    },
-    {
-      name: 'Monica Rambeau',
-      alias: 'Spectrum',
-      powers: ['Energy transformation'],
-      abilities: ['Light manipulation', 'Flight'],
-      relations: { team: ['Avengers'], allies: ['Carol Danvers'] },
-    },
-    {
-      name: 'Marc Spector',
-      alias: 'Moon Knight',
-      powers: ['Moon god enhancement'],
-      abilities: ['Enhanced strength', 'Martial arts'],
-      relations: { team: ['Avengers'] },
-    },
-    {
-      name: 'Jennifer Walters',
-      alias: 'She-Hulk',
-      powers: ['Gamma radiation transformation'],
-      abilities: ['Super strength', 'Legal expertise'],
-      relations: { team: ['Avengers'], family: ['Bruce Banner (cousin)'] },
-    },
-    {
-      name: 'Matt Murdock',
-      alias: 'Daredevil',
-      powers: ['Enhanced senses'],
-      abilities: ['Acrobatics', 'Martial arts', 'Legal expertise'],
-      relations: { team: ['Avengers', 'Defenders'] },
-    },
-    {
-      name: 'Luke Cage',
-      alias: 'Power Man',
-      powers: ['Unbreakable skin'],
-      abilities: ['Super strength', 'Combat skills'],
-      relations: { team: ['Avengers', 'Defenders'] },
-    },
-    {
-      name: 'Danny Rand',
-      alias: 'Iron Fist',
-      powers: ['Chi manipulation'],
-      abilities: ['Martial arts mastery', 'Healing'],
-      relations: { team: ['Avengers', 'Defenders'] },
-    },
-    {
-      name: 'Jessica Jones',
-      alias: 'Jewel',
-      powers: ['Super strength'],
-      abilities: ['Investigation', 'Flight (limited)'],
-      relations: { team: ['Avengers', 'Defenders'] },
-    },
-    {
-      name: 'Kamala Khan',
-      alias: 'Ms. Marvel',
-      powers: ['Polymorphing'],
-      abilities: ['Shape-shifting', 'Size alteration'],
-      relations: { team: ['Avengers'], allies: ['Carol Danvers'] },
-    },
-    {
-      name: 'Shang-Chi',
-      alias: 'Shang-Chi',
-      powers: ['Peak human condition'],
-      abilities: ['Martial arts mastery', 'Weapon proficiency'],
-      relations: { team: ['Avengers'] },
-    },
   ];
 
-  return Response.json({
-    status: 'success',
-    count: avengers.length,
-    data: avengers,
-  });
+  return Response.json(avengers);
 }
