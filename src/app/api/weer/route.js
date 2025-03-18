@@ -11,7 +11,7 @@ export async function GET(request) {
     },
     {
       id: 2,
-      name: 'Brugge',
+      city: 'Brugge',
       temperature: '-2º',
       feelsLike: '-3º',
       min: '2º',
@@ -19,7 +19,7 @@ export async function GET(request) {
     },
     {
       id: 3,
-      name: 'Knokke',
+      city: 'Knokke',
       temperature: '24º',
       feelsLike: '32º',
       min: '20º',
